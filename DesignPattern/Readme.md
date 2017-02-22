@@ -20,3 +20,6 @@
         4. 그 객체에 속하는 구성 요소
     - 헐리우드 원칙: 먼저 연락하지 마세요. 저희가 연락 드리겠습니다.
     - 클래스를 바꾸는 이유는 한 가지 뿐이어야 한다.
+
+###패턴목록
+####[Strategy 패턴](https://github.com/me3602/study/tree/master/DesignPattern/StrategyPattern)
