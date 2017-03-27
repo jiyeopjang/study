@@ -3,6 +3,7 @@ import observer.impl.CaptainAmerica;
 import observer.impl.Hulk;
 import observer.impl.Ironman;
 import observer.impl.Vision;
+import observer.impl.Watcher;
 import observer.values.EnemyStatus;
 
 public class Timline {
@@ -17,6 +18,9 @@ public class Timline {
 		
 		//옵저버가 아닌 객체 생성
 		Vision vision = new Vision();
+		
+		//와처 객체 생성
+		Watcher watcher = new Watcher(avengers);
 		
 		//0. 대기상태
 		System.out.println("======= 대기상태 ========");
@@ -36,5 +40,8 @@ public class Timline {
 		//3. 빌런 제거
 		System.out.println("======= 빌런 제거 ========");
 		avengers.setStat(EnemyStatus.DISAPPEAR);
+		
+		//4. 와처 상태 체크
+		watcher.checkStat();
 	} 
 }

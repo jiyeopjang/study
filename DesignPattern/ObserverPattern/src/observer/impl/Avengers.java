@@ -35,6 +35,11 @@ public class Avengers implements Subject {
 			hero.update(stat);
 		}
 	}
+	
+	@Override
+	public void notifyObserver(Observer observer){
+		observer.update(stat);
+	}
 
 	//상태 변경이 있을 때 옵저버 들에게 알림
 	public void setStat(EnemyStatus stat) {
